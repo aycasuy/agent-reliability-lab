@@ -1,0 +1,24 @@
+[project]
+name = "agent-reliability-lab"
+version = "0.1.0"
+description = "A small MCP-based incident diagnosis agent with repeatable evals."
+requires-python = ">=3.10"
+dependencies = [
+  "mcp[cli]>=2,<3",
+  "openai>=2",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "pytest-asyncio>=0.24",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
+
+[tool.setuptools]
+packages = ["app", "evals"]
+

@@ -1,0 +1,37 @@
+{
+  "room-service": {
+    "status": "degraded",
+    "success_rate": 0.18,
+    "p95_ms": 91
+  },
+  "auth-service": {
+    "status": "degraded",
+    "success_rate": 0.41,
+    "p95_ms": 140
+  },
+  "payment-service": {
+    "status": "degraded",
+    "success_rate": 0.62,
+    "p95_ms": 4900
+  },
+  "analytics-worker": {
+    "status": "degraded",
+    "queue_depth": 18420,
+    "free_disk_mb": 12
+  },
+  "matchmaking-service": {
+    "status": "degraded",
+    "success_rate": 0.58,
+    "p95_ms": 1305
+  },
+  "liveops-cache": {
+    "status": "degraded",
+    "cached_version": 117,
+    "origin_version": 118
+  },
+  "profile-service": {
+    "status": "healthy",
+    "success_rate": 0.995,
+    "p95_ms": 1760
+  }
+}

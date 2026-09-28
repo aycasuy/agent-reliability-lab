@@ -1,0 +1,17 @@
+[
+  {
+    "service": "room-service",
+    "release": "2026.09.28.1",
+    "deployed_at": "2026-09-28T08:55:40Z"
+  },
+  {
+    "service": "auth-service",
+    "release": "2026.09.28.2",
+    "deployed_at": "2026-09-28T09:04:40Z"
+  },
+  {
+    "service": "liveops-api",
+    "release": "2026.09.28.3",
+    "deployed_at": "2026-09-28T10:01:35Z"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "room-service": {
+    "release": "2026.09.28.1",
+    "required_env": [
+      "SUPABASE_URL",
+      "SUPABASE_SERVICE_KEY"
+    ],
+    "present_env": [
+      "SUPABASE_URL"
+    ]
+  },
+  "auth-service": {
+    "release": "2026.09.28.2",
+    "jwks_url": "https://auth.internal/.well-known/jwks.jso",
+    "expected_jwks_suffix": ".json"
+  },
+  "payment-service": {
+    "release": "2026.09.27.7",
+    "max_retries": 8,
+    "retry_backoff_ms": 50,
+    "upstream_rate_limit_sensitive": true
+  },
+  "analytics-worker": {
+    "release": "2026.09.25.4",
+    "spool_path": "/var/lib/events",
+    "min_free_disk_mb": 1024
+  },
+  "matchmaking-service": {
+    "release": "2026.09.26.6",
+    "profile_timeout_ms": 1200,
+    "recommended_profile_timeout_ms": 3000
+  },
+  "liveops-cache": {
+    "release": "2026.09.28.3",
+    "refresh_worker_enabled": false,
+    "cache_ttl_seconds": 3600
+  }
+}

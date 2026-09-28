@@ -1,0 +1,19 @@
+2026-09-28T08:56:12Z INFO service=room-service release=2026.09.28.1 startup=true
+2026-09-28T08:56:13Z ERROR service=room-service code=AUTH_INIT_FAILED message="SUPABASE_SERVICE_KEY is missing"
+2026-09-28T08:56:13Z WARN service=room-service endpoint=/rooms/join status=503 message="room backend unavailable"
+
+2026-09-28T09:05:02Z INFO service=auth-service release=2026.09.28.2 startup=true
+2026-09-28T09:05:04Z ERROR service=auth-service code=JWKS_FETCH_FAILED url="https://auth.internal/.well-known/jwks.jso" status=404
+2026-09-28T09:05:05Z WARN service=auth-service endpoint=/session/verify status=401 message="token verification unavailable"
+
+2026-09-28T09:18:21Z WARN service=payment-service endpoint=/purchase/verify status=429 upstream=store-api retry=1
+2026-09-28T09:18:21Z WARN service=payment-service endpoint=/purchase/verify status=429 upstream=store-api retry=2
+2026-09-28T09:18:22Z WARN service=payment-service endpoint=/purchase/verify status=429 upstream=store-api retry=3
+2026-09-28T09:18:23Z ERROR service=payment-service code=RETRY_BUDGET_EXHAUSTED status=503
+
+2026-09-28T09:31:10Z ERROR service=analytics-worker code=ENOSPC path=/var/lib/events message="No space left on device"
+2026-09-28T09:31:10Z WARN service=analytics-worker dropped_batch=1842 reason="spool_write_failed"
+
+2026-09-28T09:44:50Z WARN service=matchmaking-service code=UPSTREAM_TIMEOUT upstream=profile-service timeout_ms=1200
+2026-09-28T09:44:51Z WARN service=matchmaking-service code=UPSTREAM_TIMEOUT upstream=profile-service timeout_ms=1200
+2026-09-28T09:44:52Z ERROR service=matchmaking-service endpoint=/match status=504

@@ -1,0 +1,5 @@
+2026-09-28T10:02:00Z INFO service=liveops-api release=2026.09.28.3 deployment=complete
+2026-09-28T10:02:04Z INFO service=liveops-api config_version=118
+2026-09-28T10:02:05Z WARN service=liveops-cache cached_config_version=117 origin_config_version=118
+2026-09-28T10:05:05Z WARN service=liveops-cache cached_config_version=117 origin_config_version=118
+2026-09-28T10:08:05Z ERROR service=liveops-cache code=CACHE_REFRESH_FAILED message="refresh worker disabled"

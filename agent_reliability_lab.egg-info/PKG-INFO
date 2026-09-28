@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: agent-reliability-lab
+Version: 0.1.0
+Summary: A small MCP-based incident diagnosis agent with repeatable evals.
+Requires-Python: >=3.10
+Requires-Dist: mcp[cli]<3,>=2
+Requires-Dist: openai>=2
+Requires-Dist: python-dotenv>=1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24; extra == "dev"
