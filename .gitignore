@@ -7,3 +7,4 @@ evals/results/*.json
 evals/results/*.md
 !evals/results/.gitkeep
 
+*.egg-info/
